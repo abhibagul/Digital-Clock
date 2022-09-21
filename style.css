@@ -1,0 +1,55 @@
+/* https://www.cdnfonts.com/alarm-clock.font */
+@font-face {
+    font-family: 'alarm clock';
+    font-style: normal;
+    font-weight: 400;
+    src: local('alarm clock'), url('./alarm clock.woff') format('woff');
+}
+*{
+  padding:0px;
+  margin:0px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-weight: 400;
+  font-family: 'alarm clock';
+}
+.faded{
+  opacity:0.1;
+}
+
+.clock-display{
+  display:flex;
+  font-size:50px;
+  
+}
+.clock-body{
+  position:relative;
+  margin: 0 auto;
+  display: inline-block;
+}
+.preview{
+  position: absolute;
+  left:0;
+  top:0;
+}
+.container-inner{
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+.clock-outer {
+  background: rgb(183,196,178);
+  padding: 10px 20px;
+  border: 10px solid rgb(225,230,233);
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgb(0 0 0 / 20%);
+}
